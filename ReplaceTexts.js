@@ -4,7 +4,9 @@ fetch("PageText.json")
 
         for (key of Object.keys(json)) {
             if (document.querySelector(`.EthanText-${key}`)) {
-                document.querySelector(`.EthanText-${key}`).innerHTML = json[key];
+                document.querySelectorAll(`.EthanText-${key}`).forEach(x => {
+                    x.innerHTML = json[key];
+                })
             }
         }
 
