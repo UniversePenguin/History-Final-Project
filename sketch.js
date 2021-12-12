@@ -30,7 +30,7 @@ function draw() {
 }
 
 function mouseClicked() {
-    window.location.href = window.location.href + "HomePage.html"
+    window.location.href = window.location.href + "SamplePage.html"
 }
 
 class Bubble {
